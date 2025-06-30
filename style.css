@@ -1,0 +1,11 @@
+body { margin:0; font-family:'Segoe UI', sans-serif; background:linear-gradient(135deg,#fdf6f0,#fceae8); display:flex; justify-content:center; align-items:center; height:100vh; overflow:hidden; transition:background 2s ease; }
+#card { text-align:center; }
+#loveMessage { font-size:2rem; font-weight:bold; color:#c44569; display:none; animation:fadeIn 3s forwards; text-shadow:0 0 10px #ffc6d0, 0 0 20px #ff99c8; }
+#fromNote { margin-top:1rem; font-size:1rem; color:#555; }
+button { background-color:#ffafcc; color:white; border:none; padding:15px 30px; font-size:1.2rem; border-radius:25px; cursor:pointer; transition:all .3s ease; box-shadow:0 8px 20px rgba(0,0,0,.15); }
+button:hover { background-color:#ff8fab; transform:scale(1.05); }
+@keyframes fadeIn { from { opacity:0; transform:scale(.8); } to { opacity:1; transform:scale(1); } }
+.heart, .flower { position:absolute; opacity:.8; animation:fall linear infinite; }
+.heart::before { content:"💖"; }
+.flower::before { content:"🌸"; }
+@keyframes fall { 0% { transform:translateY(-10vh) rotate(0deg); opacity:.8; } 100% { transform:translateY(110vh) rotate(360deg); opacity:0; } }
